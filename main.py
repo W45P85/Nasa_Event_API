@@ -8,7 +8,7 @@ days = 365
 
 url = f"https://eonet.gsfc.nasa.gov/api/v2.1/events?limit={limit}&days={days}"
 r = requests.get(url)
-events_data = r.jason()
+events_data = r.json()
 
 with open('events.json','w') as f:
     f.write(json.dumps(events_data, indent=4))
