@@ -16,4 +16,5 @@ with open('events.json','w') as f:
 event_list = events_data['events']
 
 for event in event_list:
-    print(event['title', 'coordinates'])
+    print(event['title'])
+    print(event['geometries'])
